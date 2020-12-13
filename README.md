@@ -24,7 +24,7 @@ Skip Step 4 --> https://www.howtoforge.com/tutorial/install-laravel-on-ubuntu-fo
 #
 ## Install:
 ```
-php composer install
+composer update
 ```
 ```
 npm install && npm run dev
