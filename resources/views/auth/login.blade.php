@@ -1,7 +1,8 @@
 <x-guest-layout>
+    @section('content')
     <x-jet-authentication-card>
         <x-slot name="logo">
-            <x-jet-authentication-card-logo />
+            <img src="{{ URL::asset('images/logo_sample.png')}}" alt="logo" class="logo-dark logo-welcome-size"  />
         </x-slot>
 
         <x-jet-validation-errors class="mb-4" />
@@ -45,4 +46,5 @@
             </div>
         </form>
     </x-jet-authentication-card>
+    @endsection
 </x-guest-layout>

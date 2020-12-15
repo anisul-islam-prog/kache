@@ -25,9 +25,8 @@ Skip Step 4 --> https://www.howtoforge.com/tutorial/install-laravel-on-ubuntu-fo
 ## Install:
 ```
 composer update
-```
-```
 npm install && npm run dev
+php artisan migrate
 ```
 ## Run Server:
     php artisan serve
@@ -36,7 +35,7 @@ npm install && npm run dev
 #### Install phpMyAdmin: https://support.hostway.com/hc/en-us/articles/115001762184-Install-and-Configure-phpMyAdmin-on-Linux
 
 ## Devs Note
-Model and migration [link] https://laravel.com/docs/8.x/eloquent#defining-models
+Model and migration [link: https://laravel.com/docs/8.x/eloquent#defining-models]
 ```
 php artisan make:model <ModelName> -mfsc
 ```
