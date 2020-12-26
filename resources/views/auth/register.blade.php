@@ -38,8 +38,11 @@
                     <x-jet-input id="location" class="block mt-1 w-full" type="text" name="location" required
                         autocomplete="location" />
                 </div>
+                <x-jet-input id="role" name="role" type="hidden" value="1"/>
 
                 <div class="flex items-center justify-end mt-4">
+
+                    <!--TODO Another link to register as business -->
                     <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
                         {{ __('ইতিমধ্যে নিবন্ধভুক্ত?') }}
                     </a>

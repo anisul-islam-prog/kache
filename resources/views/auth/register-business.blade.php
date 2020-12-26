@@ -1,7 +1,8 @@
-<x-guest-layout>
+@extends('layouts.guest')
+@section('content')
     <x-jet-authentication-card>
         <x-slot name="logo">
-            <x-jet-authentication-card-logo />
+            <img src="{{ URL::asset('images/logo_sample.png') }}" alt="logo" class="logo-dark logo-welcome-size" />
         </x-slot>
 
         <x-jet-validation-errors class="mb-4" />
@@ -42,6 +43,7 @@
                 <x-jet-input id="location" class="block mt-1 w-full" type="text" name="location" required
                     autocomplete="location" />
             </div>
+            <x-jet-input id="role" name="role" type="hidden" value="2"/>
 
             <div class="flex items-center justify-end mt-4">
                 <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
@@ -54,4 +56,3 @@
             </div>
         </form>
     </x-jet-authentication-card>
-</x-guest-layout>

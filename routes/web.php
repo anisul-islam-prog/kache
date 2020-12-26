@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Laravel\Fortify\Http\Controllers\RegisteredUserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Business user Register
+Route::middleware(['guest'])->get('/register-business', function () {
+    return view('auth.register-business');
+})->name('register-business');
+
+Route::middleware(['guest'])->post('/resgister-business', [RegisteredUserController::class, 'store']);
+//Business user register
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
