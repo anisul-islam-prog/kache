@@ -1,0 +1,18 @@
+svg, img{
+    display: inline;
+}
+.logo-welcome-size{
+    height: 4pc;
+}
+#login{
+    background-color: white;
+    color: black;
+}
+#signup{
+    background-color: #ed6966;
+    color: white;
+}
+
+.logo-home-size {
+    height: 2pc;
+}

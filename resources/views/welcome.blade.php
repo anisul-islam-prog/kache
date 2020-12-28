@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-1">
-                    {{-- <p class="text-muted mb-5"> --}}
+                    <p class="text-muted mb-5">
                         <strong>
                             <ul class="list-group">
                                 <li class="list-group-item"><img src="images/right.png" class="mr-2" alt=""> স্থানীয়
@@ -48,7 +48,7 @@
                                     যান এবং দেখুন বিশ্বজুড়ে কি ঘটছে।</li>
                             </ul>
                         </strong>
-                    {{-- </p> --}}
+                    </p>
                     @if (Route::has('register'))
                     <a href="{{route('register')}}" class="btn" style="background: #ed6966;color: white; border-radius: 20px; margin-top:20px;">Signup<i class="icon-xs ml-2" data-feather="arrow-right"></i></a>
                     @endif
@@ -64,7 +64,7 @@
                     <i class="mb-4 icon-lg sw-1_5 text-primary" data-feather="sunrise"></i>
                     <h2 class="font-weight-semibold mb-4 hero-6-title" style="font-family: myRegularFont">আপনি যদি কোনও
                         ব্যবসায়িক প্রতিষ্ঠান হন তবে:</h2>
-                    {{-- <p class="mb-5 text-muted"> --}}
+                    <p class="mb-5 text-muted">
                         <strong>
                             <ul class="list-group">
                                 <li class="list-group-item"><img src="images/right.png" class="mr-2" alt=""> স্থানীয়
@@ -79,9 +79,9 @@
                                     স্থানীয় খ্যাতি পরীক্ষা করুন। </li>
                             </ul>
                         </strong>
-                    {{-- </p> --}}
+                    </p>
                     @if (Route::has('register-business'))
-                    <a href="{{route('register-business')}}" class="btn mr-2" style="background: #666fed;color: white; border-radius: 20px; margin-top: 20px">Signup
+                    <a href="{{route('register-business')}}" class="btn mr-2" style="color: white; border-radius: 20px; margin-top: 20px" id="signup">Signup
                         <i class="icon-sm ml-1" data-feather="arrow-right"></i></a>
                     @endif
                 </div>

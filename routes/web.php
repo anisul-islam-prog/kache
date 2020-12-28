@@ -23,7 +23,7 @@ Route::middleware(['guest'])->get('/register-business', function () {
     return view('auth.register-business');
 })->name('register-business');
 
-Route::middleware(['guest'])->post('/resgister-business', [RegisteredUserController::class, 'store']);
+Route::middleware(['guest'])->post('/register-business', [RegisteredUserController::class, 'store']);
 //Business user register
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
