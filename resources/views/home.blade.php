@@ -12,7 +12,7 @@
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
             @if($user_role =2)
-            <p>A post form with required fields and show post </p>
+            <p>A post form with required fields and show posts </p>
             @endif
 
         </div>
