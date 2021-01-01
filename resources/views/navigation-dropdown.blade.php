@@ -16,7 +16,7 @@
                         {{ __('Home') }}
                     </x-jet-nav-link>
                 </div>
-                @if($user_role == 2)
+                @if(Auth::user()->role == 2)
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-jet-nav-link href="{{ route('dashboard.view') }}" :active="request()->routeIs('dashboard.view')">
                         {{ __('Dashboard') }}

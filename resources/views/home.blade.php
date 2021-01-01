@@ -10,7 +10,7 @@
                 @empty
                 <p class="text-muted text-center"> There is no alert</p>
                 @endforelse
-                @if ($user_role == 2)
+                @if (Auth::user()->role == 2)
 
                 @include('includes.addpost')
 
