@@ -5,17 +5,24 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="{{ route('home') }}">
+                    <a href="{{ route('home.view') }}">
                         <img src="{{ URL::asset('images/logo_sample.png') }}" alt="logo" class="logo-dark logo-home-size" />
                     </a>
                 </div>
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
+                    <x-jet-nav-link href="{{ route('home.view') }}" :active="request()->routeIs('home.view')">
                         {{ __('Home') }}
                     </x-jet-nav-link>
                 </div>
+                @if($user_role == 2)
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="{{ route('dashboard.view') }}" :active="request()->routeIs('dashboard.view')">
+                        {{ __('Dashboard') }}
+                    </x-jet-nav-link>
+                </div>
+                @endif
             </div>
 
             <!-- Settings Dropdown -->
@@ -117,7 +124,7 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
-            <x-jet-responsive-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
+            <x-jet-responsive-nav-link href="{{ route('home.view') }}" :active="request()->routeIs('home.view')">
                 {{ __('Home') }}
             </x-jet-responsive-nav-link>
         </div>

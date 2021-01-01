@@ -22,7 +22,7 @@
                         <label for="formGroupExampleInput2">Another label</label>
                         <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
                     </div>
-                    <button type="submit" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-success">Success</button>
 
                 </form>
 

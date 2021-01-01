@@ -3,6 +3,7 @@
 use App\Http\Controllers\PagesController;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Http\Controllers\RegisteredUserController;
+use App\Http\Controllers\BusinessController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,17 +23,22 @@ Route::middleware(['guest'])->get('/', function () {
 //Business user Register
 Route::middleware(['guest'])->get('/register-business', function () {
     return view('auth.register-business');
-})->name('register-business');
+})->name('register-business.view');
 
-Route::middleware(['guest'])->post('/register-business', [RegisteredUserController::class, 'store']);
+Route::middleware(['guest'])->post('/register-business', [RegisteredUserController::class, 'store'])->name('register-business.store');
 //Business user register
+//Home
+Route::middleware(['auth:sanctum', 'verified'])->get('/home', [PagesController::class, 'home'])->name('home.view');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/home', [PagesController::class, 'home'])->name('home');
-Route::middleware(['auth:sanctum', 'verified'])->get('/allposts', [PostController::class, 'index']);
-Route::middleware(['auth:sanctum', 'verified'])->post('/post', [PostController::class, 'store']);
-Route::middleware(['auth:sanctum', 'verified'])->get('/post/{id}', [PostController::class, 'show']);
-Route::middleware(['auth:sanctum', 'verified'])->put('/post/{id}',[PostController::class, 'update']);
-Route::middleware(['auth:sanctum', 'verified'])->delete('/post/{id}', [PostController::class, 'delete']);
+//posts
+Route::middleware(['auth:sanctum', 'verified'])->get('/allposts', [PostController::class, 'index'])->name('post.getall');
+Route::middleware(['auth:sanctum', 'verified'])->post('/post', [PostController::class, 'store'])->name('post.store');
+Route::middleware(['auth:sanctum', 'verified'])->get('/post/{id}', [PostController::class, 'show'])->name('post.show');
+Route::middleware(['auth:sanctum', 'verified'])->put('/post/{id}', [PostController::class, 'update'])->name('post.update');
+Route::middleware(['auth:sanctum', 'verified'])->delete('/post/{id}', [PostController::class, 'delete'])->name('post.delete');
+
+//Dashboard (Business)
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', [BusinessController::class, 'index'])->name('dashboard.view');
 
 // Route::middleware(['auth:sanctum', 'verified'])->get('/home', function () {
 //     return view('home');

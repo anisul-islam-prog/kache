@@ -2,22 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Post;
 use Illuminate\Http\Request;
+use App\Models\Post;
 
-class PagesController extends Controller
+class BusinessController extends Controller
 {
-    public function home(Request $request)
+    public function index(Request $request)
     {
         $user = auth()->user();
         $alerts = Post::where('type', 'alert')->get();
         $user_role = $user['role'];
         $allposts = Post::all(); //Get all posts
-        $resource_for_home = array(
+        $resource_for_dashboard= array(
             'user_role'=> $user_role,
             'posts'=> $allposts,
             'alerts' => $alerts
         );
-        return view('home', $resource_for_home);
+        return view('dashboard', $resource_for_dashboard);
     }
 }
