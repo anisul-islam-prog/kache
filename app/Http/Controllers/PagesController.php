@@ -10,7 +10,7 @@ class PagesController extends Controller
     public function home(Request $request)
     {
         $user = auth()->user();
-        $alerts = Post::where('type', 'alert')->get();
+        $alerts = Post::where('type', 'alert')->get();//temporary TODO: alert make another table
         $user_role = $user['role'];
         $allposts = Post::all(); //Get all posts
         $resource_for_home = array(

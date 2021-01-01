@@ -12,6 +12,8 @@
                 @endforelse
                 @if ($user_role == 2)
 
+                @include('includes.addpost')
+{{-- 
                 <form method="POST" action="{{ route('post.store') }}">
                     @csrf
                     <div class="form-group">
@@ -24,7 +26,7 @@
                     </div>
                     <button type="submit" class="btn btn-success">Success</button>
 
-                </form>
+                </form> --}}
 
                 @else
                 @endif
@@ -34,23 +36,18 @@
                 <div class="list-group borderless">
                     <div class="list-group-item list-group-item-action flex-column align-items-start borderless">
                         <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1"> <span class="custom-span">{{$post['owner']}}</span> is giving <span class="custom-span">{{$post['discount']}}%</span> discount on <span class="custom-span">{{$post['name']}}</span></h5>
+                            <h5 class="mb-1"> <span class="custom-span"></span> is giving <span class="custom-span"></span> discount on <span class="custom-span"></span></h5>
                             <small>3 days ago</small>
                         </div>
                     </div>
                     <div class="list-group-item list-group-item-action flex-column align-items-start ">
                         <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1"> <span class="custom-span">Chillox</span> gives <span class="custom-span">30%</span> discount on <span class="custom-span">burger</span></h5>
-                            <small class="text-muted">3 days ago</small>
+                            <h5 class="mb-1"> <span class="custom-span">{{$post['owner']}}</span> gives <span class="custom-span">{{$post['discount']}}%</span> discount on <span class="custom-span">{{$post['name']}}</span></h5>
+                            <small class="text-muted">{{$post['posted_ago']}}</small>
                         </div>
                         <h6 class="text-left"> Valid Till: <kbd>30th august, 2020<kbd></h6>
                     </div>
-                    <div class="list-group-item list-group-item-action flex-column align-items-start">
-                        <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1"> <span class="custom-span">Chillox</span> gives <span class="custom-span">30%</span> discount on <span class="custom-span">burger</span></h5>
-                            <small class="text-muted">3 days ago</small>
-                        </div>
-                    </div>
+                   
                 </div>
                 @empty
                 <p class="text-muted">There is no post</p>

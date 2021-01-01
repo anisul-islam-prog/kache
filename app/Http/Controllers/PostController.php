@@ -38,9 +38,10 @@ class PostController extends Controller
         $request->validate([
             'name' => 'required',
             'platform' => 'required',
-            'discount' => 'required'
+            'discount' => 'required',
+            'refer_link' => 'required'
         ]);
-
+        //TODO: add user details in  request array
         return Post::create($request->all());
 
         // return redirect()->route('home')

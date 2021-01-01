@@ -22,6 +22,8 @@ class CreatePostsTable extends Migration
             $table->string('discount');
             $table->string('type');
             $table->string('discount_validity');
+            $table->string('discount_code');
+            $table->string('refer_link');
             $table->timestamps();
         });
     }

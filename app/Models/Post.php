@@ -21,5 +21,7 @@ class Post extends Model
         'discount',
         'type',
         'discount_validity',
+        'discount_code',
+        'refer_link',
     ];
 }
