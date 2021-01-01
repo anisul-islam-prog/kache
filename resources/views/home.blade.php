@@ -13,20 +13,6 @@
                 @if ($user_role == 2)
 
                 @include('includes.addpost')
-{{-- 
-                <form method="POST" action="{{ route('post.store') }}">
-                    @csrf
-                    <div class="form-group">
-                        <label for="formGroupExampleInput">Business Owner</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
-                    </div>
-                    <div class="form-group">
-                        <label for="formGroupExampleInput2">Another label</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-                    </div>
-                    <button type="submit" class="btn btn-success">Success</button>
-
-                </form> --}}
 
                 @else
                 @endif
@@ -34,20 +20,32 @@
                 @forelse ($posts as $post)
                 <h1 class="display-4">Latest Discount Offer</h1>
                 <div class="list-group borderless">
-                    <div class="list-group-item list-group-item-action flex-column align-items-start borderless">
-                        <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1"> <span class="custom-span"></span> is giving <span class="custom-span"></span> discount on <span class="custom-span"></span></h5>
-                            <small>3 days ago</small>
-                        </div>
-                    </div>
                     <div class="list-group-item list-group-item-action flex-column align-items-start ">
                         <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1"> <span class="custom-span">{{$post['owner']}}</span> gives <span class="custom-span">{{$post['discount']}}%</span> discount on <span class="custom-span">{{$post['name']}}</span></h5>
-                            <small class="text-muted">{{$post['posted_ago']}}</small>
+                            <h5 class="mb-1"> <span class="custom-span">{{$post['owner']}}</span> gives
+                                @if($post['type'] == 'inpercent')
+                                <span class="custom-span">{{$post['discount']}}%</span>
+                                discount on
+                                @else
+                                <span class="custom-span">{{$post['discount']}}TK OFF</span>
+                                @endif
+                                <span class="custom-span">{{$post['name']}}</span></h5>
+                            <small class="text-muted">{{$post->created_at->diffForHumans()}}</small>
                         </div>
-                        <h6 class="text-left"> Valid Till: <kbd>30th august, 2020<kbd></h6>
+                        @if ( empty($post['discount_validity']) )
+                        @else
+                        <h6 class="text-left"> Valid Till: <kbd>{ { $post['discount_validity']}}<kbd></h6>
+                        @endif
+                        @if ( empty($post['discount_code']) )
+                        @else
+                        <h6 class="text-left"> Discount Code: <kbd>{ { $post['discount_code']}}<kbd></h6>
+                        @endif
+                        @if ( empty($post['refer_link']) )
+                        @else
+                        <h6 class="text-left"> Link: <a href="https://{{ $post['refer_link'] }}" target="_blank">{{ $post['platform'] }}</h6></a>
+                        @endif
                     </div>
-                   
+
                 </div>
                 @empty
                 <p class="text-muted">There is no post</p>

@@ -21,28 +21,27 @@
                 <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')"
                     required />
             </div>
-
-            <div class="mt-4">
-                <x-jet-label for="phone" value="{{ __('মোবাইল নাম্বার') }}" />
-                <x-jet-input id="phone" class="block mt-1 w-full" type="tel" name="tel" :value="old('tel')" required />
-            </div>
-
             <div class="mt-4">
                 <x-jet-label for="password" value="{{ __('পাসওয়ার্ড') }}" />
                 <x-jet-input id="password" class="block mt-1 w-full" type="password" name="password" required
-                    autocomplete="new-password" />
+                    autocomplete="off" />
             </div>
 
             <div class="mt-4">
                 <x-jet-label for="password_confirmation" value="{{ __('কনফার্ম পাসওয়ার্ড') }}" />
                 <x-jet-input id="password_confirmation" class="block mt-1 w-full" type="password"
-                    name="password_confirmation" required autocomplete="new-password" />
+                    name="password_confirmation" required autocomplete="off" />
+            </div>
+            <div class="mt-4">
+                <x-jet-label for="phone" value="{{ __('মোবাইল নাম্বার') }}" />
+                <x-jet-input id="phone" class="block mt-1 w-full" type="tel" name="phone" :value="old('phone')" required />
             </div>
             <div class="mt-4">
                 <x-jet-label for="location" value="{{ __('ঠিকানা') }}" />
                 <x-jet-input id="location" class="block mt-1 w-full" type="text" name="location" required
                     autocomplete="location" />
             </div>
+            
             <x-jet-input id="role" name="role" type="hidden" value="2"/>
 
             <div class="flex items-center justify-end mt-4">
@@ -56,3 +55,4 @@
             </div>
         </form>
     </x-jet-authentication-card>
+    @endsection

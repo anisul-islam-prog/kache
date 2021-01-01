@@ -41,7 +41,6 @@ class PostController extends Controller
             'discount' => 'required',
             'refer_link' => 'required'
         ]);
-        //TODO: add user details in  request array
         return Post::create($request->all());
 
         // return redirect()->route('home')

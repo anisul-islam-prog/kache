@@ -80,8 +80,8 @@
                             </ul>
                         </strong>
                     </p>
-                    @if (Route::has('register-business'))
-                    <a href="{{route('register-business')}}" class="btn mr-2" style="color: white; border-radius: 20px; margin-top: 20px" id="signup">Signup
+                    @if (Route::has('register-business.store'))
+                    <a href="{{route('register-business.view')}}" class="btn mr-2" style="color: white; border-radius: 20px; margin-top: 20px" id="signup">Signup
                         <i class="icon-sm ml-1" data-feather="arrow-right"></i></a>
                     @endif
                 </div>

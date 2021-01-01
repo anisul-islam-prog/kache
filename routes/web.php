@@ -4,6 +4,7 @@ use App\Http\Controllers\PagesController;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Http\Controllers\RegisteredUserController;
 use App\Http\Controllers\BusinessController;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
