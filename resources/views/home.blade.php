@@ -34,7 +34,8 @@
                         </div>
                         @if ( empty($post['discount_validity']) )
                         @else
-                        <h6 class="text-left"> Valid Till: <kbd>{ { $post['discount_validity']}}<kbd></h6>
+                        <h6 class="text-left"> Valid Till: <kbd>{ { $post['discount_validity']}}<kbd> </h6>
+                        <small class="text-muted">{{$post->discount_validity->diffForHumans()}}</small>
                         @endif
                         @if ( empty($post['discount_code']) )
                         @else
