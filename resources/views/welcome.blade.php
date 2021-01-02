@@ -9,7 +9,7 @@
                     <h1 class="font-weight-semibold mb-4 hero-6-title" style="font-family: myRegularFont">আপনার বাড়ির
                         এবং বর্তমান অবস্থানের নিকটে </h1>
                     <h5 class="mb-5 text-muted">আপনার প্রতিবেশী এবং লোকজনের সাথে সংযুক্ত হন।</h5>
-                    <a href="#" class="btn btn-lg" style="background: #ed6966;color: white; border-radius: 20px;">Signup<i class="icon-sm ml-1" data-feather="arrow-right"></i></a>
+                    <a href="#" class="btn btn-lg" style="background: #ed6966;color: white; border-radius: 20px;">Signup<i class="icon-sm ml-1"></i></a>
                 </div>
                 <div class="col-lg-6 offset-lg-1">
                     <div class="mt-lg-0 mt-4">
@@ -50,7 +50,7 @@
                         </strong>
                     </p>
                     @if (Route::has('register'))
-                    <a href="{{route('register')}}" class="btn" style="background: #ed6966;color: white; border-radius: 20px; margin-top:20px;">Signup<i class="icon-xs ml-2" data-feather="arrow-right"></i></a>
+                    <a href="{{route('register')}}" class="btn" style="background: #ed6966;color: white; border-radius: 20px; margin-top:20px;">Signup<i class="icon-xs ml-2"></i></a>
                     @endif
                 </div>
             </div>
@@ -82,7 +82,7 @@
                     </p>
                     @if (Route::has('register-business.store'))
                     <a href="{{route('register-business.view')}}" class="btn mr-2" style="color: white; border-radius: 20px; margin-top: 20px" id="signup">Signup
-                        <i class="icon-sm ml-1" data-feather="arrow-right"></i></a>
+                        <i class="icon-sm ml-1"></i></a>
                     @endif
                 </div>
                 <div class="col-lg-6 offset-lg-1">
@@ -109,10 +109,10 @@
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-1">
-                    <h2 class="mb-4">Coming Soon</h2>
-                    <p class="text-muted mb-5">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    <h2 class="mb-4">শীঘ্রই আসছে</h2>
+                    <!-- <p class="text-muted mb-5">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                         accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
-                        veritatis..</p>
+                        veritatis..</p> -->
                     <!--                        <a href="#" class="btn btn-primary">Find out more <i class="icon-xs ml-2" data-feather="arrow-right"></i></a>-->
                     <img src="images/googleplay.png" alt="" width="200px" height="80px">
                     <img src="images/appstore.png" alt="" width="200px" height="80px">
