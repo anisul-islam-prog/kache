@@ -33,7 +33,7 @@
          </div>
          <div class="form-group col-md-6 float-left">
            <label for="discount_validity">Validity</label>
-           <input type="date" class="form-control" id="discount_validity" placeholder="discount_validity">
+           <input type="text" class="form-control" id="discount_validity" name="discount_validity" placeholder="Select a Date">
          </div>
          <div class="form-group col-md-6 float-left">
            <label for="discount_code">Discount Code</label>

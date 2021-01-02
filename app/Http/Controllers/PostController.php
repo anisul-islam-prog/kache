@@ -41,7 +41,11 @@ class PostController extends Controller
             'discount' => 'required',
             'refer_link' => 'required'
         ]);
-        return Post::create($request->all());
+        // print_r($request->all());
+        // die;
+        $post = Post::create($request->all());
+
+        return back()->with('success','Post created successfully!');
 
         // return redirect()->route('home')
         //     ->with('success', 'Product created successfully.');
