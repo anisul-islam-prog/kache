@@ -14,7 +14,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="text-center mt-5">
-                    <p class="text-white-50 f-15 mb-0">© Copyright 2018 - Haatkhoroch.
+                    <p class="text-white-50 f-15 mb-0">© Copyright 2018 - Kache.
 <span>All rights reserved.</span></p>
                 </div>
             </div>
