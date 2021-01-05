@@ -44,7 +44,9 @@
            <label for="refer_link">Link to Promotion</label>
            <input type="text" class="form-control" id="refer_link" name="refer_link" placeholder="https://www.example.com/" required>
          </div>
-         <button type="submit" class="btn btn-success col-md-10 ">Post</button>
+         <div class="modal-footer">
+            <button type="submit" class="btn btn-success col-md-4">Post</button>
+        </div>
 
        </form>
      </div>

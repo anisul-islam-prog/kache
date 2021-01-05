@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{ asset('css/custom.css')}}">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+   
 
     @livewireStyles
 
@@ -37,11 +38,10 @@
     @stack('modals')
 
     @livewireScripts
-    <script src="{{ URL::asset('js/jquery.easing.min.js')}}"></script>
+    <script src="{{ URL::asset('js/jquery.min.js')}}"></script>
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.js" defer></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <script src="{{ URL::asset('js/bootstrap.bundle.min.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script>
         flatpickr("#discount_validity", {

@@ -8,14 +8,17 @@
                         blanditiis praesentium voluptatum deleniti.</p> -->
                 </div>
             </div>
-           
+
         </div>
 
         <div class="row">
             <div class="col-lg-12">
                 <div class="text-center mt-5">
-                    <p class="text-white-50 f-15 mb-0">© Copyright 2018 - Haatkhoroch.
-<span>All rights reserved.</span></p>
+                    <p class="text-white-50 f-15 mb-0">
+                        <a href="http://kache.xyz" id="footer-link">kache.xyz</a>&nbsp;2018-
+                        <span id="footer-span"></span>
+                        &copy;&nbsp;All&nbsp;rights&nbsp;reserved
+                    </p>
                 </div>
             </div>
         </div>

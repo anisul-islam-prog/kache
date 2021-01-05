@@ -21144,8 +21144,8 @@ $('.video-play-icon').magnificPopup({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\kache\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\kache\resources\css\app.css */"./resources/css/app.css");
+__webpack_require__(/*! /home/anis/Get_Started/kache-laravel/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/anis/Get_Started/kache-laravel/resources/css/app.css */"./resources/css/app.css");
 
 
 /***/ })

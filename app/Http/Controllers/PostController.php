@@ -24,7 +24,6 @@ class PostController extends Controller
      */
     public function create()
     {
-        
     }
 
     /**
@@ -41,11 +40,10 @@ class PostController extends Controller
             'discount' => 'required',
             'refer_link' => 'required'
         ]);
-        // print_r($request->all());
-        // die;
+
         $post = Post::create($request->all());
 
-        return back()->with('success','Post created successfully!');
+        return back()->with('success', 'Post created successfully!');
 
         // return redirect()->route('home')
         //     ->with('success', 'Product created successfully.');
@@ -80,16 +78,16 @@ class PostController extends Controller
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Post $post)
+    public function update(Request $request, $postid)
     {
         $request->validate([
             'name' => 'required',
             'platform' => 'required',
             'discount' => 'required'
         ]);
-        $post = Post::findOrFail($post);
+        $post = Post::findOrFail($postid);
         $post->update($request->all());
-        return $post;
+        return back()->with('success', 'Post updated successfully!');
     }
 
     /**

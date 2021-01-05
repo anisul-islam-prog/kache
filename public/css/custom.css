@@ -16,3 +16,14 @@ svg, img{
 .logo-home-size {
     height: 2pc;
 }
+.custom-jumbotron {
+    width: 100% !important;
+}
+.custom-span {
+    font-size: 35px !important;
+    color: #ed6966;
+}
+#footer-link{
+    color: white;
+    text-decoration: underline !important;
+}

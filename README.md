@@ -31,7 +31,8 @@ php artisan migrate
     php artisan serve
 
 
-#### Install phpMyAdmin: https://support.hostway.com/hc/en-us/articles/115001762184-Install-and-Configure-phpMyAdmin-on-Linux
+#### Install phpMyAdmin: 
+[Link](https://support.hostway.com/hc/en-us/articles/115001762184-Install-and-Configure-phpMyAdmin-on-Linux)
 
 
 ## To hold session after registration 
@@ -41,10 +42,12 @@ php artisan migrate
     $this->guard->login($user, true);
 ```
 ## Devs Note
-Model and migration [link: https://laravel.com/docs/8.x/eloquent#defining-models]
+Model and migration [link](https://laravel.com/docs/8.x/eloquent#defining-models)
 ```
 php artisan make:model <ModelName> -mfsc
 ```
+#### Deployed following the steps
+[link](https://www.darwinbiler.com/how-to-properly-deploy-laravel-in-shared-hosting-2019 "Delpoy in Cpanel link")
 
 #### For Server
 
