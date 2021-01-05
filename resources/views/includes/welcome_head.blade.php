@@ -17,5 +17,6 @@
 <!-- <link href="{{ URL::asset('css/') }}" rel="stylesheet" type="text/css" /> -->
 <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
 <link href="{{ asset('css/style.min.css') }}" rel="stylesheet" type="text/css" />
-<link href="{{ asset('css/fontStyle.css') }}" rel="stylesheet" type="text/css" />
+<!-- <link href="{{ asset('css/fontStyle.css') }}" rel="stylesheet" type="text/css" /> -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 <link href="{{ URL::asset('css/custom.css') }}" rel="stylesheet" type="text/css" />
