@@ -27,3 +27,6 @@ svg, img{
     color: white;
     text-decoration: underline !important;
 }
+.welcome-tick{
+    margin-bottom: 3px;
+}
