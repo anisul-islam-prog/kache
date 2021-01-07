@@ -35,7 +35,7 @@
                 <p class="text-muted mb-5">
                     <strong>
                         <ul class="list-group">
-                            <li class="list-group-item"><img src="images/right.png" class="mr-2 welcome-tick" alt=""> আশেপাশের মুদি দোকান বা অন্য কোনও ব্যবসায়ের বিক্রয় বিজ্ঞাপন দেখুন।</li>
+                            <li class="list-group-item"><img src="images/right.png" class="mr-2 welcome-tick" alt=""> আশেপাশের মুদি দোকান বা অন্য কোন ব্যবসায়ের বিক্রয় বিজ্ঞাপন দেখুন।</li>
                             <li class="list-group-item"><img src="images/right.png" class="mr-2 welcome-tick" alt=""> পণ্য কিংবা সেবা ক্রয়-বিক্রয় করুন (সেবার মধ্যে যে কোন প্রকার বৈধ এবং সামাজিকভাবে স্বীকৃত কার্যক্রম, যেমন পোষা প্রাণীদের উপচর্যা, ঘরবাড়ি পরিচর্যা ইত্যাদি অন্তর্ভুক্ত)। </li>
                             <li class="list-group-item"><img src="images/right.png" class="mr-2 welcome-tick" alt=""> কর্তৃপক্ষ
                                 দ্বারা আপনার অঞ্চলের জন্য জারি করা সতর্কতাগুলি দেখুন।</li>
