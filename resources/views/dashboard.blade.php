@@ -4,10 +4,9 @@
     <div class="row w-100">
         <div class="col-10 mx-auto">
             <div class="custom-jumbotron text-center">
-                @if (Auth::user()->role == 2)
+                
                 @include('includes.addpost')
-                @else
-                @endif
+            
                 <h1 class="display-4">Your Posts</h1>
                 @forelse ($posts as $post)
                 <div class="list-group borderless">
