@@ -4,11 +4,11 @@
          @csrf
          <input type="hidden" id="owner" name="owner" value="{{ Auth::user()->name }}" >
          <div class="form-group col-md-6 float-left">
-           <label for="name">Product Name</label>
+           <label for="name">Product Name<span style="color: red;">*</span></label>
            <input type="text" class="form-control" id="name" name="name" placeholder="Product Name" required>
          </div>
          <div class="form-group col-md-6 float-left">
-           <label for="platform">Platform Name</label>
+           <label for="platform">Platform Name<span style="color: red;">*</span></label>
            <select class="form-control" id="platform" name="platform" required>
              <option value="">--Select a Platform--</option>
              <option value="facebook">Facebook</option>
@@ -21,18 +21,18 @@
          </div>
          <input type="hidden" id="created_by" name="created_by" value="{{ Auth::user()->email }}" >
          <div class="form-group col-md-6 float-left">
-           <label for="discount">Discount Amount</label>
+           <label for="discount">Discount Amount<span style="color: red;">*</span></label>
            <input type="text" class="form-control" id="discount" name="discount" placeholder="Discount Amount" required>
          </div>
          <div class="form-group col-md-6 float-left">
-           <label for="type">Discount Amount Type</label>
+           <label for="type">Discount Amount Type<span style="color: red;">*</span></label>
            <select class="form-control" id="type" name="type" required>
              <option value="inpercent">%(Percent)</option>
              <option value="value">Taka</option>
            </select>
          </div>
          <div class="form-group col-md-6 float-left">
-           <label for="discount_validity">Validity</label>
+           <label for="discount_validity">Validity<span style="color: red;">*</span></label>
            <input type="text" class="form-control" id="discount_validity" name="discount_validity" placeholder="Select a Date">
          </div>
          <div class="form-group col-md-6 float-left">
@@ -41,7 +41,7 @@
          </div>
 
          <div class="form-group col-md-12 float-left">
-           <label for="refer_link">Link to Promotion</label>
+           <label for="refer_link">Link to Promotion<span style="color: red;">*</span></label>
            <input type="text" class="form-control" id="refer_link" name="refer_link" placeholder="https://www.example.com/" required>
          </div>
          <div class="modal-footer">
