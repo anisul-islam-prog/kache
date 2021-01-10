@@ -6,7 +6,6 @@ use Laravel\Fortify\Http\Controllers\RegisteredUserController;
 use App\Http\Controllers\BusinessController;
 use App\Http\Controllers\FeatureReqController;
 use App\Http\Controllers\PostController;
-use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +17,6 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Auth::routes(['verify' => true]);
 
 Route::middleware(['guest'])->get('/', function () {
     return view('welcome');
