@@ -64,7 +64,7 @@
                         <ul class="list-group">
                             <li class="list-group-item"><img src="images/right.png" class="mr-2 welcome-tick" alt=""> আপনি স্থানীয় বিজ্ঞাপন দিতে পারবেন। </li>
                             <li class="list-group-item"><img src="images/right.png" class="mr-2 welcome-tick" alt=""> পণ্যের স্থানীয় বাজার পর্যবক্ষেণ করতে পারবেন। </li>
-                            <li class="list-group-item"><img src="images/right.png" class="mr-2 welcome-tick" alt=""> প্সমাজের সকলের সাথে বন্ধন তৈরি করতে পারবেন। </li>
+                            <li class="list-group-item"><img src="images/right.png" class="mr-2 welcome-tick" alt=""> সমাজের সকলের সাথে বন্ধন তৈরি করতে পারবেন। </li>
                             <li class="list-group-item"><img src="images/right.png" class="mr-2 welcome-tick" alt=""> বিশেষ ছাড় দিতে পারেন এবং আপনার সুনাম ছড়িয়ে দিতে পারেন। </li>
                         </ul>
                     </strong>
