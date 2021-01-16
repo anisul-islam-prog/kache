@@ -8,7 +8,7 @@
 <!-- Scripts -->
 
 <title>কাছে</title>
-<meta name="description" content="আপনার আশেপাশের বন্ধু-বান্ধব, প্রতিবেশি কিংবা পরিচিত জনদের সাথে সংযুক্ত থাকুন।"/>
+<meta name="description" content="আপনার আশেপাশের বন্ধু-বান্ধব, প্রতিবেশী কিংবা পরিচিত জনদের সাথে সংযুক্ত থাকুন।"/>
 <link rel="shortcut icon" href="{{ URL::asset('favicon.ico') }}" type="image/x-icon" />
 
 

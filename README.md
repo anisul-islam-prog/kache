@@ -56,3 +56,6 @@ php artisan make:model <ModelName> -mfsc
 #
 ## License
 
+### Always run in server
+    php artisan config:cache
+    php artisan route:cache

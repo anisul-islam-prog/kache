@@ -7,7 +7,7 @@
             <div class="col-lg-5">
                 {{-- <i class="mb-4 icon-lg sw-1_5 text-primary" data-feather="sunrise"></i> --}}
                 <h1 class="font-weight-semibold mb-4 hero-6-title" style="font-family: myRegularFont">আপনার আশেপাশের </h1>
-                <h5 class="mb-5 text-muted">বন্ধু-বান্ধব, প্রতিবেশি কিংবা পরিচিত জনদের সাথে সংযুক্ত থাকুন।</h5>
+                <h5 class="mb-5 text-muted">বন্ধু-বান্ধব, প্রতিবেশী কিংবা পরিচিত জনদের সাথে সংযুক্ত থাকুন।</h5>
                 <a href="#" class="btn btn-lg" style="background: #ed6966;color: white; border-radius: 20px;">Signup<i class="icon-sm ml-1"></i></a>
             </div>
             <div class="col-lg-6 offset-lg-1">
@@ -39,9 +39,9 @@
                             <li class="list-group-item"><img src="images/right.png" class="mr-2 welcome-tick" alt=""> পণ্য কিংবা সেবা ক্রয়-বিক্রয় করুন (সেবার মধ্যে যে কোন প্রকার বৈধ এবং সামাজিকভাবে স্বীকৃত কার্যক্রম, যেমন পোষা প্রাণীদের উপচর্যা, ঘরবাড়ি পরিচর্যা ইত্যাদি অন্তর্ভুক্ত)। </li>
                             <li class="list-group-item"><img src="images/right.png" class="mr-2 welcome-tick" alt=""> কর্তৃপক্ষ
                                 দ্বারা আপনার অঞ্চলের জন্য জারি করা সতর্কতাগুলি দেখুন।</li>
-                            <li class="list-group-item"><img src="images/right.png" class="mr-2 welcome-tick" alt=""> আপনি চাইলে প্রশ্ন জিজ্ঞাসা করতে পারেন কিংবা মতগ্রহন করতে পারেন।</li>
-                            <li class="list-group-item"><img src="images/right.png" class="mr-2 welcome-tick" alt=""> আপনি চাইলে ক্রীড়াসূচি তৈরি করতে পারেন এবং আপনার পছন্দমত ক্রীড়াসূচিতে পরিচিতজনদের আমন্ত্রন করতে পারেন।</li>
-                            <li class="list-group-item"><img src="images/right.png" class="mr-2 welcome-tick" alt=""> আপনি চাইলে বিশ্বজনীন পরিসরে পরিচালনা করতে পারেন এবং চলমান ঘটনাপ্রবাহের ব্যাপারে অবগত হতে পারেন।</li>
+                            <li class="list-group-item"><img src="images/right.png" class="mr-2 welcome-tick" alt=""> আপনি আপনার যে কোন প্রশ্ন ও মতামত দিতে পারেন। </li>
+                            <li class="list-group-item"><img src="images/right.png" class="mr-2 welcome-tick" alt=""> আপনি যে কোন অনুষ্ঠান আয়োজন করতে পারবেন, সাথে আপনার প্রতিবেশীদের আমন্ত্রণ জানাতে পারবেন।</li>
+                            <li class="list-group-item"><img src="images/right.png" class="mr-2 welcome-tick" alt=""> আপনি বিশ্বের চলমান ঘটনা সম্পর্কে জানতে পারবেন।</li>
                         </ul>
                     </strong>
                 </p>
@@ -62,9 +62,9 @@
                 <p class="mb-5 text-muted">
                     <strong>
                         <ul class="list-group">
-                            <li class="list-group-item"><img src="images/right.png" class="mr-2 welcome-tick" alt=""> স্থানীয় চুক্তি বিজ্ঞাপন দিতে পারেন, </li>
-                            <li class="list-group-item"><img src="images/right.png" class="mr-2 welcome-tick" alt=""> স্থানীয় পরিসংখ্যান করতে পারেন, </li>
-                            <li class="list-group-item"><img src="images/right.png" class="mr-2 welcome-tick" alt=""> প্রযোজ্য সম্প্রদায়ের সাথে যুক্ত হতে পারেন, </li>
+                            <li class="list-group-item"><img src="images/right.png" class="mr-2 welcome-tick" alt=""> আপনি স্থানীয় বিজ্ঞাপন দিতে পারবেন। </li>
+                            <li class="list-group-item"><img src="images/right.png" class="mr-2 welcome-tick" alt=""> পণ্যের স্থানীয় বাজার পর্যবক্ষেণ করতে পারবেন। </li>
+                            <li class="list-group-item"><img src="images/right.png" class="mr-2 welcome-tick" alt=""> প্সমাজের সকলের সাথে বন্ধন তৈরি করতে পারবেন। </li>
                             <li class="list-group-item"><img src="images/right.png" class="mr-2 welcome-tick" alt=""> বিশেষ ছাড় দিতে পারেন এবং আপনার সুনাম ছড়িয়ে দিতে পারেন। </li>
                         </ul>
                     </strong>
