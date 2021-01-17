@@ -8,7 +8,9 @@
                 {{-- <i class="mb-4 icon-lg sw-1_5 text-primary" data-feather="sunrise"></i> --}}
                 <h1 class="font-weight-semibold mb-4 hero-6-title" style="font-family: myRegularFont">আপনার আশেপাশের </h1>
                 <h5 class="mb-5 text-muted">বন্ধু-বান্ধব, প্রতিবেশী কিংবা পরিচিত জনদের সাথে সংযুক্ত থাকুন।</h5>
-                <a href="#" class="btn btn-lg" style="background: #ed6966;color: white; border-radius: 20px;">Signup<i class="icon-sm ml-1"></i></a>
+                @if (Route::has('register'))
+                <a href="{{route('register')}}" class="btn btn-lg" style="background: #ed6966;color: white; border-radius: 20px;">Signup<i class="icon-sm ml-1"></i></a>
+                @endif
             </div>
             <div class="col-lg-6 offset-lg-1">
                 <div class="mt-lg-0 mt-4">
