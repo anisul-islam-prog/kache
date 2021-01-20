@@ -4,6 +4,7 @@ use App\Http\Controllers\PagesController;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Http\Controllers\RegisteredUserController;
 use App\Http\Controllers\BusinessController;
+use App\Http\Controllers\FeatureReqController;
 use App\Http\Controllers\PostController;
 
 /*
@@ -37,6 +38,9 @@ Route::middleware(['auth:sanctum', 'verified'])->post('/post', [PostController::
 Route::middleware(['auth:sanctum', 'verified'])->get('/post/{id}', [PostController::class, 'show'])->name('post.show');
 Route::middleware(['auth:sanctum', 'verified'])->put('/post/{id}', [PostController::class, 'update'])->name('post.update');
 Route::middleware(['auth:sanctum', 'verified'])->delete('/post/{id}', [PostController::class, 'delete'])->name('post.delete');
+
+//Feature Requests
+Route::middleware(['auth:sanctum', 'verified'])->post('/addReq', [FeatureReqController::class, 'store'])->name('feature.store');
 
 //Dashboard (Business)
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', [BusinessController::class, 'index'])->name('dashboard.view');

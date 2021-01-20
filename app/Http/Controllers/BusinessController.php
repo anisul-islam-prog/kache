@@ -10,7 +10,9 @@ class BusinessController extends Controller
     public function index(Request $request)
     {
         $user = auth()->user();
-        $allposts = Post::where('created_by', $user['email'])->get(); //Get all posts created by user id
+        $allposts = Post::where('created_by', $user['email'])
+            ->orderBy('created_at', 'desc')
+            ->get(); //Get all posts created by user id
         // var_dump($allposts);die;
         $resource_for_dashboard = array(
             'posts' => $allposts,

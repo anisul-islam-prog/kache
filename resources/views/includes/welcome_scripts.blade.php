@@ -1,4 +1,3 @@
-
 <script src="{{ URL::asset('js/jquery.min.js')}}"></script>
 <script src="{{ URL::asset('js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{ URL::asset('js/scrollspy.min.js')}}"></script>
@@ -16,4 +15,10 @@
 <script src="{{ URL::asset('js/custom.js')}}"></script>
 <script>
     feather.replace();
+</script>
+
+<script>
+    // const footerSpan = $("#");
+    // footerSpan.innerHTML = `${(new Date().getFullYear())}`;
+    document.getElementById("footer-span").innerHTML = new Date().getFullYear();
 </script>

@@ -4,17 +4,22 @@
     <div class="row w-100">
         <div class="col-10 mx-auto">
             <div class="custom-jumbotron text-center">
-                @if( empty($alerts))
-                @else
-                <h1 class="display-4">Alert</h1>
-                @endif
-                @forelse ($alerts as $alert)
-                {{ $alerts }}
-                @empty
-                <p class="text-muted text-center"> There is no alert</p>
-                @endforelse
-
-
+                <div class="alert alert-danger alert-block">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    @if(empty($alerts))
+                    @else
+                    @forelse ($alerts as $alert)
+                    <strong> Annoucement made {{$alert->created_at->diffForHumans()}}: {{ $alert['annoucement'] }}</strong>
+                    @empty
+                    <p class="text-muted text-center"> There is no announcement</p>
+                    @endforelse
+                    @endif
+                </div>
+                <div class="text-right">
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#feature-req">
+                        Request a feature!
+                    </button>
+                </div>
                 @if( empty($posts))
                 @else
                 <h1 class="display-4">Latest Discount Offer</h1>
@@ -23,14 +28,16 @@
                 <div class="list-group borderless">
                     <div class="list-group-item list-group-item-action flex-column align-items-start ">
                         <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1"> <span class="custom-span">{{$post['owner']}}</span> gives
+                            <h5 class="mb-1"> <span class="custom-span">{{$post['owner']}}</span> giving
                                 @if($post['type'] == 'inpercent')
                                 <span class="custom-span">{{$post['discount']}}%</span>
                                 discount on
                                 @else
-                                <span class="custom-span">{{$post['discount']}}TK OFF</span>
+                                <span class="custom-span">{{$post['discount']}}TAKA</span>
+                                OFF on
                                 @endif
-                                <span class="custom-span">{{$post['name']}}</span></h5>
+                                <span class="custom-span">{{$post['name']}}</span>
+                            </h5>
                             <small class="text-muted">{{$post->created_at->diffForHumans()}}</small>
                         </div>
                         @if ( empty($post['discount_validity']) )
@@ -51,11 +58,33 @@
                 @empty
                 <p class="text-muted">There is no post</p>
                 @endforelse
-
-
             </div>
         </div>
     </div>
 </div>
-<!--TODO Make feed for post-->
-@endsection
+<div class="modal fade" id="feature-req" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Request a Feature</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form class="col-12" method="POST" action="{{ route('feature.store') }}">
+                <div class="modal-body">
+                    @csrf
+                    <input type="hidden" id="requested_by" name="requested_by" value="{{ Auth::user()->email }}">
+                    <div class="form-group col-md-12 ">
+                        <label for="name">Feature Details<span style="color: red;">*</span></label>
+                        <textarea type="textarea" class="form-control" id="details" name="details" placeholder="Feature Details" style="height:300px" required></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-success">Save Changes</button>
+                    </div>
+            </form>
+        </div>
+
+    </div>
+    @endsection

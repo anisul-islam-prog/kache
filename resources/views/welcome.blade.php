@@ -21,19 +21,19 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Hero End -->
-    <!-- Hero part 2 -->
-    <section class="bg-center position-relative overflow-hidden">
-        <div class="container">
-            <div class="row align-items-center section pb-lg-0 pb-0">
-                <div class="col-lg-6">
-                    <div class="position-relative mb-lg-0 mb-5">
-                        <div class="mr-5 features-img">
-                            <img src="images/image_2.png" alt="" class="img-fluid d-block" />
-                        </div>
-                        <img src="images/dot-img.png" alt="" class="dot-img-right" />
+    </div>
+</section>
+<!-- Hero End -->
+<!-- Hero part 2 -->
+<section class="bg-center position-relative overflow-hidden">
+    <div class="container">
+        <div class="row align-items-center section pb-lg-0 pb-0">
+            <div class="col-lg-6">
+                <div class="position-relative mb-lg-0 mb-5">
+                    <div class="mr-5 features-img">
+                        <img src="images/image_2.png" alt="" class="img-fluid d-block" />
                     </div>
+                    <img src="images/dot-img.png" alt="" class="dot-img-right" />
                 </div>
                 <div class="col-lg-5 offset-lg-1">
                     <p class="text-muted mb-5">
@@ -98,25 +98,27 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    
 
 
-    <section class="bg-center position-relative overflow-hidden">
-        <div class="container">
-            <div class="row align-items-center section pb-lg-0 pb-0">
-                <div class="col-lg-6">
-                    <div class="position-relative mb-lg-0 mb-5">
-                        <div class="mr-5 features-img">
-                            <img src="images/image_3.png" alt="" class="img-fluid d-block" />
-                        </div>
-                        <img src="images/dot-img.png" alt="" class="dot-img-right" />
+
+<section class="bg-center position-relative overflow-hidden">
+    <div class="container">
+        <div class="row align-items-center section pb-lg-0 pb-0">
+            <div class="col-lg-6">
+                <div class="position-relative mb-lg-0 mb-5">
+                    <div class="mr-5 features-img">
+                        <img src="images/image_3.png" alt="" class="img-fluid d-block" />
                     </div>
+                    <img src="images/dot-img.png" alt="" class="dot-img-right" />
                 </div>
-                <div class="col-lg-5 offset-lg-1">
-                    <h2 class="mb-4">শীঘ্রই আসছে</h2>
-                    <!-- <p class="text-muted mb-5">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            </div>
+            <div class="col-lg-5 offset-lg-1">
+                <h1 class="font-weight-semibold mb-4 hero-6-title text-center" style="font-family: myRegularFont">শীঘ্রই আসছে</h1>
+                <!-- <h2 class="mb-4">শীঘ্রই আসছে</h2> -->
+                <!-- <p class="text-muted mb-5">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                         accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
                         veritatis..</p> -->
                     <!--                        <a href="#" class="btn btn-primary">Find out more <i class="icon-xs ml-2" data-feather="arrow-right"></i></a>-->
@@ -128,5 +130,6 @@
                 </div>
             </div>
         </div>
-    </section>
-    @endsection
+    </div>
+</section>
+@endsection

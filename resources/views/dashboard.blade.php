@@ -4,10 +4,9 @@
     <div class="row w-100">
         <div class="col-10 mx-auto">
             <div class="custom-jumbotron text-center">
-                @if (Auth::user()->role == 2)
+                
                 @include('includes.addpost')
-                @else
-                @endif
+            
                 <h1 class="display-4">Your Posts</h1>
                 @forelse ($posts as $post)
                 <div class="list-group borderless">
@@ -20,7 +19,8 @@
                                 @else
                                 <span class="custom-span">{{$post['discount']}}TK OFF</span>
                                 @endif
-                                <span class="custom-span">{{$post['name']}}</span></h5>
+                                <span class="custom-span">{{$post['name']}}</span>
+                            </h5>
                             <small class="text-muted">{{$post->created_at->diffForHumans()}}</small>
                         </div>
                         @if ( empty($post['discount_validity']) )
@@ -35,6 +35,10 @@
                         @if ( empty($post['refer_link']) )
                         @else
                         <h6 class="text-left"> Link: <a href="https://{{ $post['refer_link'] }}" target="_blank">{{ $post['platform'] }}</h6></a>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#Modal{{ $post['id'] }} ">
+                            Edit
+                        </button>
                         @endif
                     </div>
                 </div>
@@ -45,4 +49,15 @@
         </div>
     </div>
 </div>
+
+
+
+@foreach($posts as $post)
+<div class="modal fade" id="Modal{{$post['id']}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   @include('includes.updatepost')
+</div>
+@endforeach
+
+
+
 @endsection
