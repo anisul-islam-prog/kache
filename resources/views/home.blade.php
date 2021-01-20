@@ -28,7 +28,7 @@
                 <div class="list-group borderless">
                     <div class="list-group-item list-group-item-action flex-column align-items-start ">
                         <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1"> <span class="custom-span">{{$post['owner']}}</span> gives
+                            <h5 class="mb-1"> <span class="custom-span">{{$post['owner']}}</span> giving
                                 @if($post['type'] == 'inpercent')
                                 <span class="custom-span">{{$post['discount']}}%</span>
                                 discount on
