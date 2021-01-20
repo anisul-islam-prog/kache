@@ -9,7 +9,10 @@
                     <h1 class="font-weight-semibold mb-4 hero-6-title" style="font-family: myRegularFont">আপনার বাড়ির
                         এবং বর্তমান অবস্থানের নিকটে </h1>
                     <h5 class="mb-5 text-muted">আপনার প্রতিবেশী এবং লোকজনের সাথে সংযুক্ত হন।</h5>
+                    <div class="text-center float-lg-left">
                     <a href="#" class="btn btn-lg" style="background: #ed6966;color: white; border-radius: 20px;">Signup<i class="icon-sm ml-1"></i></a>
+                          </div>
+                    
                 </div>
                 <div class="col-lg-6 offset-lg-1">
                     <div class="mt-lg-0 mt-4">
@@ -50,7 +53,9 @@
                         </strong>
                     </p>
                     @if (Route::has('register'))
+                    <div class="text-center float-lg-left">
                     <a href="{{route('register')}}" class="btn" style="background: #ed6966;color: white; border-radius: 20px; margin-top:20px;">Signup<i class="icon-xs ml-2"></i></a>
+                          </div>
                     @endif
                 </div>
             </div>
@@ -79,10 +84,11 @@
                                     স্থানীয় খ্যাতি পরীক্ষা করুন। </li>
                             </ul>
                         </strong>
-                    </p>
+                    </p>                 
                     @if (Route::has('register-business.store'))
+                    <div class="text-center float-lg-left">
                     <a href="{{route('register-business.view')}}" class="btn mr-2" style="color: white; border-radius: 20px; margin-top: 20px" id="signup">Signup
-                        <i class="icon-sm ml-1"></i></a>
+                        <i class="icon-sm ml-1"></i></a>  </div>    
                     @endif
                 </div>
                 <div class="col-lg-6 offset-lg-1">
@@ -114,8 +120,11 @@
                         accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
                         veritatis..</p> -->
                     <!--                        <a href="#" class="btn btn-primary">Find out more <i class="icon-xs ml-2" data-feather="arrow-right"></i></a>-->
+                    <div class="text-center">
                     <img src="images/googleplay.png" alt="" width="200px" height="80px">
                     <img src="images/appstore.png" alt="" width="200px" height="80px">
+                    </div>
+                    
                 </div>
             </div>
         </div>

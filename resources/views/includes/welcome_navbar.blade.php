@@ -10,26 +10,8 @@
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <i class="" data-feather="menu"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
-                <!--                        <li class="nav-item active">-->
-                <!--                            <a href="#home" class="nav-link">Home</a>-->
-                <!--                        </li>-->
-                <!--                        <li class="nav-item">-->
-                <!--                            <a href="#services" class="nav-link">Services</a>-->
-                <!--                        </li>-->
-                <!--                        <li class="nav-item">-->
-                <!--                            <a href="#features" class="nav-link">Features</a>-->
-                <!--                        </li>-->
-                <!--                        <li class="nav-item">-->
-                <!--                            <a href="#pricing" class="nav-link">Pricing</a>-->
-                <!--                        </li>-->
-                <!--                        <li class="nav-item">-->
-                <!--                            <a href="#team" class="nav-link">Team</a>-->
-                <!--                        </li>-->
-                <!--                        <li class="nav-item">-->
-                <!--                            <a href="#blog" class="nav-link">Blog</a>-->
-                <!--                        </li>-->
+        <div class="collapse navbar-collapse text-center" id="navbarCollapse">
+            <ul class="nav navbar-nav ml-auto" id="mySidenav">
                 @if (Route::has('login'))
                     <li class="nav-item">
                         @auth
