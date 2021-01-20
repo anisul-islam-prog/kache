@@ -15,7 +15,7 @@
                     @endforelse
                     @endif
                 </div>
-                <div class="text-right">
+                <div class="text-center">
                     <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#feature-req">
                         Request a feature!
                     </button>
