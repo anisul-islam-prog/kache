@@ -10,7 +10,14 @@
             <form class="col-12" method="POST" action="{{ route('post.update', $post['id']) }}">
                 <input type="hidden" name="_method" value="PUT">
                 @csrf
+                @if(Auth::user()->role == 3)
+                <div class="form-group col-md-6 float-left">
+                    <label for="name">Owner Name<span style="color: red;">*</span></label>
+                    <input type="text" class="form-control" id="owner" name="owner" placeholder="Owner Name" required>
+                </div>
+                @else
                 <input type="hidden" id="owner" name="owner" value="{{ Auth::user()->name }}">
+                @endif
                 <div class="form-group col-md-6 float-left">
                     <label for="name">Product Name<span style="color: red;">*</span></label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="" required>
