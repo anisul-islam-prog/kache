@@ -45,6 +45,10 @@ Route::middleware(['auth:sanctum', 'verified'])->post('/addReq', [FeatureReqCont
 //Dashboard (Business)
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', [BusinessController::class, 'index'])->name('dashboard.view');
 
+Route::middleware(['auth:sanctum', 'verified'])->get('/getinfo', function () {
+    return view('info.phpinfo');
+})->name('info.view');
+
 // Route::middleware(['auth:sanctum', 'verified'])->get('/home', function () {
 //     return view('home');
 // })->name('home');
