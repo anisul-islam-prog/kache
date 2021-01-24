@@ -10,7 +10,7 @@
                     এবং বর্তমান অবস্থানের নিকটে </h1>
                 <h5 class="mb-5 text-muted">আপনার প্রতিবেশী এবং লোকজনের সাথে সংযুক্ত হন।</h5>
                 <div class="text-center float-lg-left">
-                    <a href="#" class="btn btn-lg" style="background: #ed6966;color: white; border-radius: 20px;">Signup<i class="icon-sm ml-1"></i></a>
+                    <a href="{{ route('register') }}" class="btn btn-lg" style="background: #ed6966;color: white; border-radius: 20px;">Signup<i class="icon-sm ml-1"></i></a>
                 </div>
 
             </div>
