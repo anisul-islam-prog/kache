@@ -30,3 +30,15 @@ svg, img{
 .welcome-tick{
     margin-bottom: 3px;
 }
+@media (max-width: 700px) {
+    .custom-span{
+        font-size: 17.5px !important;
+        text-align: left !important;
+    }
+    #discount-sec-title{
+        font-size: 30px;
+    }
+    .discount-sec{
+        font-size: 10px;
+    }
+}

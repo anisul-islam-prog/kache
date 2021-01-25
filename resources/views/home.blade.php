@@ -22,13 +22,13 @@
                 </div>
                 @if( empty($posts))
                 @else
-                <h1 class="display-4">Latest Discount Offer</h1>
+                <h1 class="display-4" id="discount-sec-title">Latest Discount Offer</h1>
                 @endif
                 @forelse ($posts as $post)
                 <div class="list-group borderless">
                     <div class="list-group-item list-group-item-action flex-column align-items-start ">
                         <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1"> <span class="custom-span">{{$post['owner']}}</span> giving
+                            <h5 class="mb-1 text-left discount-sec"><span class="custom-span">{{$post['owner']}}</span> giving
                                 @if($post['type'] == 'inpercent')
                                 <span class="custom-span">{{$post['discount']}}%</span>
                                 discount on
@@ -38,20 +38,20 @@
                                 @endif
                                 <span class="custom-span">{{$post['name']}}</span>
                             </h5>
-                            <small class="text-muted">{{$post->created_at->diffForHumans()}}</small>
+                            <small class="text-muted discount-sec">{{$post->created_at->diffForHumans()}}</small>
                         </div>
                         @if ( empty($post['discount_validity']) )
                         @else
-                        <h6 class="text-left"> Valid Till: <kbd>{{ date('j F, Y',strtotime($post['discount_validity'])) }}<kbd> </h6>
+                        <h6 class="text-left discount-sec"> Valid Till: <kbd>{{ date('j F, Y',strtotime($post['discount_validity'])) }}<kbd> </h6>
                         {{-- <small class="text-muted">{{ $post->discount_validity->diffForHumans() }} remaining</small> --}}
                         @endif
                         @if ( empty($post['discount_code']) )
                         @else
-                        <h6 class="text-left"> Discount Code: <kbd>{{ $post['discount_code'] }}<kbd></h6>
+                        <h6 class="text-left discount-sec"> Discount Code: <kbd>{{ $post['discount_code'] }}<kbd></h6>
                         @endif
                         @if ( empty($post['refer_link']) )
                         @else
-                        <h6 class="text-left"> Link: <a href="https://{{ $post['refer_link'] }}" target="_blank">{{ $post['platform'] }}</h6></a>
+                        <h6 class="text-left discount-sec"> Link: <a href="https://{{ $post['refer_link'] }}" target="_blank">{{ $post['platform'] }}</h6></a>
                         @endif
                     </div>
                 </div>
