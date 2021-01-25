@@ -42,12 +42,12 @@
                         </div>
                         @if ( empty($post['discount_validity']) )
                         @else
-                        <h6 class="text-left discount-sec"> Valid Till: <kbd>{{ date('j F, Y',strtotime($post['discount_validity'])) }}<kbd> </h6>
+                        <h6 class="text-left discount-sec"> Valid Till: <kbd class="discount-sec">{{ date('j F, Y',strtotime($post['discount_validity'])) }}<kbd> </h6>
                         {{-- <small class="text-muted">{{ $post->discount_validity->diffForHumans() }} remaining</small> --}}
                         @endif
                         @if ( empty($post['discount_code']) )
                         @else
-                        <h6 class="text-left discount-sec"> Discount Code: <kbd>{{ $post['discount_code'] }}<kbd></h6>
+                        <h6 class="text-left discount-sec"> Discount Code: <kbd class="discount-sec">{{ $post['discount_code'] }}<kbd></h6>
                         @endif
                         @if ( empty($post['refer_link']) )
                         @else
