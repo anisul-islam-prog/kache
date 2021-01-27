@@ -20,7 +20,7 @@ use App\Http\Controllers\PostController;
 
 Route::middleware(['guest'])->get('/', function () {
     return view('welcome');
-});
+})->name('landing.view');;
 
 //Business user Register
 Route::middleware(['guest'])->get('/register-business', function () {

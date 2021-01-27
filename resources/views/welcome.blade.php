@@ -35,31 +35,32 @@
                     </div>
                     <img src="images/dot-img.png" alt="" class="dot-img-right" />
                 </div>
-                <div class="col-lg-5 offset-lg-1">
-                    <p class="text-muted mb-5">
-                        <strong>
-                            <ul class="list-group">
-                                <li class="list-group-item"><img src="images/right.png" class="mr-2" alt=""> স্থানীয়
-                                    খুচরা বা অন্য কোনও দোকানে প্রদত্ত বিক্রয় প্রচার দেখুন। </li>
-                                <li class="list-group-item"><img src="images/right.png" class="mr-2" alt=""> কর্তৃপক্ষ
-                                    দ্বারা আপনার অঞ্চলের জন্য জারি করা সতর্কতাগুলি দেখুন।</li>
-                                <li class="list-group-item"><img src="images/right.png" class="mr-2" alt=""> প্রশ্ন
-                                    জিজ্ঞাসা করুন বা একটি পোল তৈরি করুন।</li>
-                                <li class="list-group-item"><img src="images/right.png" class="mr-2" alt=""> ইভেন্টগুলি
-                                    সংগঠিত করুন এবং আপনার প্রতিবেশীদের ইভেন্টগুলিতে আমন্ত্রণ জানান।</li>
-                                <li class="list-group-item"><img src="images/right.png" class="mr-2" alt=""> বিশ্বব্যাপী
-                                    যান এবং দেখুন বিশ্বজুড়ে কি ঘটছে।</li>
-                            </ul>
-                        </strong>
-                    </p>
-                    @if (Route::has('register'))
-                    <div class="text-center float-lg-left">
-                        <a href="{{route('register')}}" class="btn" style="background: #ed6966;color: white; border-radius: 20px; margin-top:20px;">Signup<i class="icon-xs ml-2"></i></a>
-                    </div>
-                    @endif
+            </div>
+            <div class="col-lg-5 offset-lg-1">
+                <p class="text-muted mb-5">
+                    <strong>
+                        <ul class="list-group">
+                            <li class="list-group-item"><img src="images/right.png" class="mr-2" alt=""> স্থানীয়
+                                খুচরা বা অন্য কোনও দোকানে প্রদত্ত বিক্রয় প্রচার দেখুন। </li>
+                            <li class="list-group-item"><img src="images/right.png" class="mr-2" alt=""> কর্তৃপক্ষ
+                                দ্বারা আপনার অঞ্চলের জন্য জারি করা সতর্কতাগুলি দেখুন।</li>
+                            <li class="list-group-item"><img src="images/right.png" class="mr-2" alt=""> প্রশ্ন
+                                জিজ্ঞাসা করুন বা একটি পোল তৈরি করুন।</li>
+                            <li class="list-group-item"><img src="images/right.png" class="mr-2" alt=""> ইভেন্টগুলি
+                                সংগঠিত করুন এবং আপনার প্রতিবেশীদের ইভেন্টগুলিতে আমন্ত্রণ জানান।</li>
+                            <li class="list-group-item"><img src="images/right.png" class="mr-2" alt=""> বিশ্বব্যাপী
+                                যান এবং দেখুন বিশ্বজুড়ে কি ঘটছে।</li>
+                        </ul>
+                    </strong>
+                </p>
+                @if (Route::has('register'))
+                <div class="text-center float-lg-left">
+                    <a href="{{route('register')}}" class="btn" style="background: #ed6966;color: white; border-radius: 20px; margin-top:20px;">Signup</a>
                 </div>
+                @endif
             </div>
         </div>
+    </div>
 </section>
 <!-- Hero End part 2 -->
 <section class="bg-center position-relative overflow-hidden" style="background-image: url(images/hero-6-bg.png); " id="home">
