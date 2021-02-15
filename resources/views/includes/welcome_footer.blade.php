@@ -1,4 +1,4 @@
-<section class="footer" style="background-image: url(images/footer-bg.png);">
+<section class="footer mt-4" style="background-image: url(images/footer-bg.png);">
     <div class="container">
         <div class="row">
             <div class="col-lg-2">
@@ -15,7 +15,8 @@
             <div class="col-lg-12">
                 <div class="text-center mt-5">
                     <p class="text-white-50 f-15 mb-0">© Copyright 2021 - Kache.
-<span>All rights reserved.</span></p>
+                        <span>All rights reserved.</span>
+                    </p>
                 </div>
             </div>
         </div>

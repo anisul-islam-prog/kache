@@ -1,0 +1,174 @@
+  .pricing-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pricing-table h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+  
+  .container-pricing{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 20px 0;
+  }
+  
+  .pricing-table .element {
+    border: 1px solid var(--dark-grey);
+    border-radius: 12px;
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.1rem;
+    background-color: var(--white);
+  }
+  
+  .element > * {
+    margin: 15px;
+  }
+  
+  .element:nth-of-type(2) {
+    transform: scale(1.05);
+  }
+  
+  .element .info h3 {
+    font-size: 1.8rem;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .element .info p {
+    text-align: center;
+    margin: 0 20px;
+    font-size: 1rem;
+  }
+  
+  .element .price {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  
+  .element .period {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--grey);
+    padding: 0.5rem;
+    border-radius: 8px;
+    color: var(--dark);
+  }
+  
+  .element .period label {
+    flex: 1 1 50%;
+    text-align: center;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+  }
+  
+  .element .period label:hover {
+    text-decoration: underline;
+  }
+  
+  .period input[type="radio"] {
+    display: none;
+  }
+  
+  .period input[type="radio"]:checked + label {
+    font-weight: 700;
+    background-color: var(--white);
+    border-radius: 6px;
+  }
+  
+  .element ul {
+    font-size: 1.2rem;
+    list-style-type: none;
+  }
+  
+  .element ul li {
+    margin: 0.5rem;
+  }
+  
+  .element ul li::before {
+    content: url("https://karolnowinski.pl/assets/check-mark.svg");
+    display: inline-block;
+    margin: 0 10px;
+    width: 1em;
+    height: auto;
+  }
+  
+  .element button {
+    border: 0;
+    background-color: var(--white);
+    font-size: 1.4rem;
+    color: var(--dark);
+    border: 1px solid var(--dark);
+    border-radius: 8px;
+    padding: 10px 30px;
+    margin: 20px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .element button:hover {
+    text-decoration: underline;
+    box-shadow: 2px 2px 0px var(--dark);
+  }
+  
+  .element button:focus {
+    outline-color: var(--dark);
+  }
+  
+  .active {
+    background: linear-gradient(135deg, var(--red), var(--orange));
+    color: var(--white);
+    border: 1px solid transparent !important;
+  }
+  
+  .active ul li::before {
+    content: url("https://karolnowinski.pl/assets/check-mark-white.svg");
+  }
+  
+  .active button {
+    border-color: transparent;
+  }
+  
+  @media only screen and (max-width: 1500px) {
+    .pricing-table{
+      font-size: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 1080px) {
+    .container-pricing {
+      flex-direction: column;
+    }
+  
+    .element {
+      margin: 20px 0;
+    }
+  
+    .element:nth-of-type(2) {
+      transform: scale(1);
+    }
+  
+    .element ul {
+      display: flex;
+      justify-content: space-around;
+      margin: 0 20px;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+  
+    .period {
+      flex-wrap: wrap;
+    }
+  }

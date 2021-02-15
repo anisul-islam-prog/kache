@@ -2,15 +2,15 @@
     @section('content')
     <x-jet-authentication-card>
         <x-slot name="logo">
-            <img src="{{ URL::asset('images/logo_sample.png')}}" alt="logo" class="logo-dark logo-welcome-size"  />
+            <img src="{{ URL::asset('images/logo_sample.png')}}" alt="logo" class="logo-dark logo-welcome-size" />
         </x-slot>
 
         <x-jet-validation-errors class="mb-4" />
 
         @if (session('status'))
-            <div class="mb-4 font-medium text-sm text-green-600">
-                {{ session('status') }}
-            </div>
+        <div class="mb-4 font-medium text-sm text-green-600">
+            {{ session('status') }}
+        </div>
         @endif
 
         <form method="POST" action="{{ route('login') }}">
@@ -33,11 +33,16 @@
                 </label>
             </div>
 
-            <div class="flex items-center justify-end mt-4">
+            <div class="flex items-center justify-end mt-5">
+
+                <a class="underline text-sm text-gray-600 hover:text-gray-900 mr-4" href="{{ route('userlogin.away') }}">
+                    {{ __('Login as a User') }}
+                </a>
+
                 @if (Route::has('password.request'))
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
-                        {{ __('Forgot your password?') }}
-                    </a>
+                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
+                    {{ __('Forgot your password?') }}
+                </a>
                 @endif
 
                 <x-jet-button class="ml-4">

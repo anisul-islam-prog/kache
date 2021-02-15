@@ -42,3 +42,33 @@ svg, img{
         font-size: 10px;
     }
 }
+.cardSize{
+    width: 25% !important;
+    margin-right: 0px !important;
+    border-color: white !important;
+    margin-bottom: 50px !important;
+}
+.whiteborbg{
+    border-color:white;
+    background: white;
+}
+.show-p{
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+}
+@media (max-width: 700px) {
+    .custom-span{
+        font-size: 17.5px !important;
+        text-align: left !important;
+    }
+    #discount-sec-title{
+        font-size: 30px;
+    }
+    .discount-sec{
+        font-size: 10px;
+    }
+    .cardSize{
+        width: 50% !important;
+    }
+}

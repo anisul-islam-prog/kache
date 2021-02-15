@@ -10,7 +10,7 @@
                     এবং বর্তমান অবস্থানের নিকটে </h1>
                 <h5 class="mb-5 text-muted">আপনার প্রতিবেশী এবং লোকজনের সাথে সংযুক্ত হন।</h5>
                 <div class="text-center float-lg-left">
-                    <a href="{{ route('register') }}" class="btn btn-lg" style="background: #ed6966;color: white; border-radius: 20px;">Signup<i class="icon-sm ml-1"></i></a>
+                    <a href="{{ route('userlogin.away') }}" class="btn btn-lg" style="background: #ed6966;color: white; border-radius: 20px;">Signup<i class="icon-sm ml-1"></i></a>
                 </div>
 
             </div>
@@ -55,7 +55,7 @@
                 </p>
                 @if (Route::has('register'))
                 <div class="text-center float-lg-left">
-                    <a href="{{route('register')}}" class="btn" style="background: #ed6966;color: white; border-radius: 20px; margin-top:20px;">Signup</a>
+                    <a href="{{ route('userlogin.away') }}" class="btn" style="background: #ed6966;color: white; border-radius: 20px; margin-top:20px;">Signup</a>
                 </div>
                 @endif
             </div>
@@ -73,8 +73,6 @@
                 <p class="mb-5 text-muted">
                     <strong>
                         <ul class="list-group">
-                            <li class="list-group-item"><img src="images/right.png" class="mr-2" alt=""> স্থানীয়
-                                ডিল বিজ্ঞাপনগুলি চালান। </li>
                             <li class="list-group-item"><img src="images/right.png" class="mr-2" alt=""> স্থানীয়
                                 ডিল বিজ্ঞাপনগুলি চালান। </li>
                             <li class="list-group-item"><img src="images/right.png" class="mr-2" alt="">
@@ -123,6 +121,93 @@
             </div>
         </div>
     </div>
+    </div>
+</section>
+<!-- Show case Start-->
+<section class="bg-center position-relative overflow-hidden">
+    <div class="container">
+        <div class="container mt-5 text-center">
+            <div class="row">
+                <div class="card bg-light mb-3 mr-1 cardSize">
+                    <div class="card-header whiteborbg"></div>
+                    <div class="card-body whiteborbg">
+                        <h5 class="card-title">Registered Community</h5>
+                        <p class="card-text show-p">14+</p>
+                    </div>
+                </div>
+                <div class="card bg-light mb-3 mr-1 cardSize">
+                    <div class="card-header whiteborbg"></div>
+                    <div class="card-body whiteborbg">
+                        <h5 class="card-title">Registered Businesses</h5>
+                        <p class="card-text show-p">14+</p>
+                    </div>
+                </div>
+                <div class="card bg-light mb-3 mr-5 cardSize">
+                    <div class="card-header whiteborbg"></div>
+                    <div class="card-body whiteborbg">
+                        <h5 class="card-title">Businesses Served</h5>
+                        <p class="card-text show-p">5+</p>
+                    </div>
+                </div>
+                <div class="card bg-light mb-3 mr-5 cardSize">
+                    <div class="card-header whiteborbg"></div>
+                    <div class="card-body whiteborbg">
+                        <h5 class="card-title">% Excellent Feedback</h5>
+                        <p class="card-text show-p">100%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Pricing Start-->
+<section class="bg-center pricing-table position-relative overflow-hidden">
+    <header>
+        <h2>Right Plan For You!</h2>
+    </header>
+    <div class="container-pricing">
+        <div class="element">
+            <div class="info">
+                <h3>Free</h3>
+            </div>
+            <span class="price">৳0</span>
+            <ul>
+                <li>৳100 per campaign marketing consultancy</li>
+                <li>10% SC per campaign</li>
+                <li>$1 = ৳110</li>
+            </ul>
+            <a href="tel:+8801682760923"><button>Call us!</button></a>
+        </div>
+        <div class="element premium active">
+            <div class="info">
+                <h3>Premium</h3>
+            </div>
+            <span class="price">৳100</span>
+            <div class="period">
+                <input type="radio" name="period" id="monthly" value="৳100" checked />
+                <label for="monthly">Monthly</label>
+                <input type="radio" name="period" id="annualy" value="৳1000" />
+                <label for="annualy">Annually</label>
+            </div>
+            <ul>
+                <li>Free Marketing Consultancy</li>
+                <li>$1 = ৳110</li>
+                <li>10% SC per campaign</li>
+            </ul>
+            <a href="tel:+8801682760923"><button>Call us!</button></a>
+        </div>
+        <div class="element">
+            <div class="info">
+                <h3>Custom</h3>
+            </div>
+            <span class="price">-</span>
+            <ul>
+                <li>All Premium Capabilities</li>
+                <li>Customized Analytics</li>
+                <li>Customized Reports</li>
+            </ul>
+            <a href="tel:+8801682760923"><button>Call us!</button></a>
+        </div>
     </div>
 </section>
 @endsection

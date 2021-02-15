@@ -13,12 +13,7 @@
 <script src="{{ URL::asset('js/app.js')}}"></script>
 
 <script src="{{ URL::asset('js/custom.js')}}"></script>
+<script src="{{ URL::asset('js/pricingtable.js')}}"></script>
 <script>
     feather.replace();
-</script>
-
-<script>
-    // const footerSpan = $("#");
-    // footerSpan.innerHTML = `${(new Date().getFullYear())}`;
-    document.getElementById("footer-span").innerHTML = new Date().getFullYear();
 </script>

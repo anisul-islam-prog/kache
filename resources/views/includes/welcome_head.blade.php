@@ -22,6 +22,7 @@
 <!-- <link href="{{ asset('css/fontStyle.css') }}" rel="stylesheet" type="text/css" /> -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 <link href="{{ URL::asset('css/custom.css') }}" rel="stylesheet" type="text/css" />
+<link href="{{ URL::asset('css/pricingtable.css') }}" rel="stylesheet" type="text/css" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-88D188ZQ7Q"></script>
 <script>

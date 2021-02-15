@@ -22,7 +22,7 @@
                         </li>
                 </ul>
                 @if (Route::has('register'))
-                    <a href="{{ route('register') }}"><button class="btn btn-sm rounded-pill nav-btn ml-lg-3"
+                    <a href="{{ route('userlogin.away') }}"><button class="btn btn-sm rounded-pill nav-btn ml-lg-3"
                             id="signup">Signup<button></a>
                 @endif
                 @endif

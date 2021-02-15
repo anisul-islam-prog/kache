@@ -20,7 +20,11 @@ use App\Http\Controllers\PostController;
 
 Route::middleware(['guest'])->get('/', function () {
     return view('welcome');
-})->name('landing.view');;
+})->name('landing.view');
+
+Route::middleware(['guest'])->get('/userlogin', function () {
+    return redirect()->away('http://www.kachebd.xyz');
+})->name('userlogin.away');
 
 //Business user Register
 Route::middleware(['guest'])->get('/register-business', function () {
