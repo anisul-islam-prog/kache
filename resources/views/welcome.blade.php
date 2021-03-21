@@ -160,7 +160,7 @@
         </div>
     </div>
 </section>
-<!-- Pricing Start-->
+<!-- Pricing Start
 <section class="bg-center pricing-table position-relative overflow-hidden">
     <header>
         <h2>Right Plan For You!</h2>
@@ -172,11 +172,11 @@
             </div>
             <span class="price">৳0</span>
             <ul>
-                <li>৳100 per campaign marketing consultancy</li>
-                <li>10% SC per campaign</li>
-                <li>$1 = ৳110</li>
+                <li>৳100 per Advertising marketing consultancy</li>
+                <li>20% SC per campaign</li>
+                <li>$1 = ৳85</li>
             </ul>
-            <a href="tel:+8801682760923"><button>Call us!</button></a>
+            <a href="tel:+8801682760923"><button>Call us +8801682760923</button></a>
         </div>
         <div class="element premium active">
             <div class="info">
@@ -209,5 +209,18 @@
             <a href="tel:+8801682760923"><button>Call us!</button></a>
         </div>
     </div>
+</section> -->
+<section class="bg-center pricing-table position-relative overflow-hidden">
+    <header>
+        <h2>Contact Us!</h2>
+    </header>
+    <div class="container mt-5 text-center">
+        <div class="container text-center mb-5">
+            <a href="tel:+8801682760923" >
+                <h3> Mobile No: +8801682760923</h3>
+            </a>
+        </div>
+    </div>
+
 </section>
 @endsection
