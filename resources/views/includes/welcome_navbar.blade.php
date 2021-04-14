@@ -17,7 +17,7 @@
                         @auth
                             <a href="{{ url('/dashboard') }}"><button class="nav-link" id="home">Home</a></button>
                         @else
-                            <a href="{{ route('login') }}"><button class="btn btn-sm rounded-pill nav-btn ml-lg-3"
+                            <a href="{{ route('userlogin.away') }}"><button class="btn btn-sm rounded-pill nav-btn ml-lg-3"
                                     id="login">Login</button></a>
                         </li>
                 </ul>
